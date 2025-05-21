@@ -1,0 +1,27 @@
+.home-img {
+  position: relative;
+  width: 285px;
+  height: 335px;
+  margin: 57.5px 90px;
+}
+
+.home-img:before,
+.home-img:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+}
+
+.home-img:before {
+  bottom: 100%;
+  border-bottom: 57.5px solid transparent; /* Ubah ini */
+}
+
+.home-img:after {
+  top: 100%;
+  width: 0;
+  border-top: 57.5px solid transparent; /* Ubah ini */
+}
+
